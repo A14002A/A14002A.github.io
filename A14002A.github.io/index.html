@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow of the Depths</title>
+</head>
+<body>
+    <header>
+       <!--the content of the header goes here -->
+       <h1 id="logo">Glow of the Depths</h1>
+       <nav>
+        <br>
+        <ul id="nav-ul">
+            <li><a href="" class="navbutton">Home</a></li>
+            <li><a href="" class="navbutton">Sea Creature Gallery</a></li>
+            <li><a href="" class="navbutton">About</a></li>
+            <li><a href="" class="navbutton">Contact</a></li>
+        </ul>
+       </nav>
+    </header>
+    <main>
+        <!-- main content of the website can go here -->
+         <div id="main-content">
+         <div>
+        <article>
+            <header>
+                <!-- Article's header goes here -->
+                 <h2> Explore the Glow </h2>
+                 <h4>Glow of the Depths explores the world of bioluminescent and fluorescent sea creatures with stunning artworks of the deep ocean.</h4>
+            </header>
+            <main>
+                <p>Hello and welcome to Glow of the Depths! I'm a a passionate beginner diving into the world of marine art as a hobby, and I'm excited to share my journey with you.</p>
+                <blockquote>
+                    <cite>"In the darkest depths of the ocean, natire creates its own light, revealing  the beauty and mystery of life where we least expect it" - Created by ChatGPT, 2024</cite>
+                </blockquote>
+                <h3>What You'll Find Here:</h3>
+                <h4>Lanternfish</h4>
+                <p>Discover the lanternfish, a small ocean dweller known for its bioluminescent light, which helps it navigate and attract prey in the dark depths of the sea.</p>
+                <h4>Jellyfish</h4>
+                <p>Explore the jellyfish, a creature with a gelatinous body and a captivating, transparent glow.</p>
+                <h4>Squid</h4>
+                <p>The unique thing about the squid, they are an intelligent cephaloped with remarkable abilities to change colour and texture for communication and camouflage.</p>
+                <h4>Coral</h4>
+                <p>About coral, which creates vibrant underwater ecosystems and plays a vital role in the marine biodiversity.</p>
+                <h1>Sea Creature Gallery</h1>
+                
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="Photos\Lanternfish.png" alt="lanternfish" oneclick="openModal(this)" width="250" height="200">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Photos\jellyfish.png" alt="jellyfish" oneclick="openModal(this)" width="250" height="200">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Photos\squid.png" alt="squid" oneclick="openModal(this)" width="250" height="200">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Photos\coral.png" alt="coral" oneclick="openModal(this)" width="250" height="200">
+                    </div>
+                </div>
+
+                <div id="myModal" class="modal">
+                    <span class="close" oneclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="expandedImg">
+                    <div id="caption"></div>
+                </div>
+
+                <script src="script.js"></script>
+            </main>
+            <footer>
+                <!-- footer goes here -->
+                 <h3>AL Artwork</h3>
+                 <img src="Photos/Jellyfish.png" alt="Jellyfish" id = "jellyfish" width="100" height="70">
+                 <h4><cite>Neon Jellyfish, 2021 created by AL Artwork</cite></h4>
+                <a href="" target="_blank">AL Artwork's profile</a>
+            </footer>
+        </article>            
+         </div>
+        <aside>
+            <section>
+                <h4>Filter by Category</h4>
+                <nav>
+                    <ul>
+                        <li><a href="">Lanternfish</a></li>
+                        <li><a href="">Jellyfish</a></li>
+                        <li><a href="">Squid</a></li>
+                        <li><a href="">Coral</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </aside>
+         </div>
+
+        
+        <hr>
+        <h2>Thank you for visiting Glow of the Depths! Fell free to explore, and don't heasitate to reach out with any thoughts or questions.</h2>
+        <p>Subcribe to my newletter to receive updates about my artworks. Choose hoow often you'd like to hear from us and feel free to leave me a message:</p>
+        <form id="comment-box" action="" method="">
+            <label for="first_name">Your First Name:</label>
+            <input type="text" id="first_name" name="first_name" required>
+            <br>
+
+            <label for="last_name">Your Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required>
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <br>
+
+            <label for="your_favourite">Which was your favourite:</label>
+            <input type="radio" name="which_is_your_favourite" id="lanternfish" value="lanternfish">
+            <label for="lanternfish">Lanternfish</label>
+            <input type="radio" name="which_is_your_favourite" id="jellyfish" value="jellyfish">
+            <label for="jellyfish">Jellyfish</label>
+            <input type="radio" name="squid" id="squid" value="squid">
+            <label for="squid">Squid</label>
+            <input type="radio" name="coral" id="coral" value="coral">
+            <label for="coral">Coral</label>
+            <br>
+
+            <label for="frequency">How often would you like to receive updates?</label>
+            <select name="frequency" id="frequency">
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+                <option value="yearly">Yearly</option>
+            </select>
+            <br>
+
+            <label for="message">Message or comments:</label>
+            <textarea name="message" id="message" placeholder="Share any additional thoughts or preferences here..." cols="25" rows="6"></textarea>
+            <br>
+            <input type="checkbox" id="confirm" name="confirm">
+            <label for="confirm">I agree to receive newletter and understand I can unsubscribe at any time.</label>
+            <br>
+
+            <button type="submit">Thank you for subscribing!</button>
+        </form>
+        <hr>
+    </main>
+    <footer>
+        <h3 id="footer">Glow of the Depths</h3>
+        <section>
+            <nav>
+                <ul id="footer-ul">
+                    <div>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Sea Creature Gallery</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </div>
+                <div>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Cookie Policy</a></li>
+                </div>
+                </ul>
+            </nav>
+        </section>
+    </footer>
+</body>
+</html>
